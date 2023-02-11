@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+}
+
+body {
+  background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+  background-attachment: fixed;
+}
+
+.header {
+  display: flex;
+}
+
+.logo {
+  margin-top: 5vh !important;
+  margin: 0 auto;
+  width: 10rem;
+}
+
+.welcome-note {
+  font-size: 5rem;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 700;
+}
+
+.para {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.enter-name {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.enter-name input[type="text"] {
+  border-radius: 6px;
+  font-size: 2rem;
+  border: none;
+  height: 50px;
+  width: 40vw;
+  padding: 0 10px;
+}
+
+.enter-name button[type="submit"] {
+  cursor: pointer;
+  border-radius: 6px;
+  border: none;
+  padding: 0 10px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #7ed957;
+}
+
+.category {
+  width: 90vw;
+  border-top: 1px solid gray;
+  margin: 30px auto;
+}
+
+#category {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  font-size: 2rem;
+}
+
+.container{
+    margin: 0 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 20px;
+}
+
+.category-container{
+    background-color:#7ed957;
+    cursor: pointer;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 10px;
+ font-size: 1.5rem;
+ border: 3px solid ;
+ padding: 10px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
