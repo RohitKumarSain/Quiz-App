@@ -12,8 +12,9 @@ const timeCount = document.querySelector(".timer .timer_sec");
 
 function displayUsername() {
   var username = document.getElementById("username").value;
+  sessionStorage.setItem("username",username)
   let wel =document.getElementById("welcome");
-  wel.innerHTML = username;
+  wel.innerHTML = sessionStorage.getItem('username');
   wel.style.color = "#7ed957";
 };
 
@@ -184,7 +185,7 @@ function showResult() {
   const scoreText = result_box.querySelector(".score_text");
   if (userScore > 3) {
     
-    let userName = document.getElementById("userName").value;
+    let userName = sessionStorage.getItem("username")
     let scoreTag = `Congrats! <strong>${userName}</strong>, <br>
     You got <strong>${userScore}</strong> out of <strong>${
       questions.length
@@ -196,7 +197,7 @@ function showResult() {
     scoreText.innerHTML = scoreTag; 
   } else if (userScore > 1) { 
     
-    let userName = document.getElementById("userName").value;
+    let userName = sessionStorage.getItem("username")
     let scoreTag = `Nice! <strong>${userName}</strong>, <br>
     You got <strong>${userScore}</strong> out of <strong>${
       questions.length
@@ -208,7 +209,7 @@ function showResult() {
     scoreText.innerHTML = scoreTag;
   } else {
     // if user scored less than 1
-    let userName = document.getElementById("userName").value;
+    let userName = sessionStorage.getItem("username")
     let scoreTag = `Sorry! <strong>${userName}</strong>, <br>
       You got <strong>${userScore}</strong> out of <strong>${
       questions.length
