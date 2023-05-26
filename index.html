@@ -9,7 +9,7 @@
     <title>Quiz App</title>
 </head>
 <body>
-
+    <!-- header section here -->
     <div class="header">
         <img src="style/img/logo.png" alt="Quiz" class="logo">
     </div>
@@ -18,20 +18,24 @@
         <p>Welcome <span id="welcome">To Quiz!</span></p> 
     </div>
     <p class="para">Enter Your Name To Continue The Quiz</p>
+    <!-- Take username as input -->
     <div class="enter-name">
         <input type="text" id="username">
         <button onclick="displayUsername()" class="submit" type="submit">Enter</button>
     
     </div>
+    <!-- category section here -->
     <div class="category">
         <h2 id="category">Select Category</h2>
     </div>
+    <!-- List of topic for take quiz -->
     <div class="container">
         <button class="category-container"><a href="pac.html">Pipes And Cisterns</a> </button>
         <button class="category-container"><a href="prob.html">Probabilty</a> </button>
         <button class="category-container"><a href="poa.html">Problem On Ages</a> </button>
         <button class="category-container"><a href="pal.html">Profit And Loss</a></button>
     </div>
+    <!-- javascript here -->
     <script src="script.js"></script>
 </body>
 </html>
